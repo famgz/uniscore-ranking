@@ -1,5 +1,5 @@
-let url = 'http://189.126.105.132:5000/rankingequipes';  // gunicorn
-let url_local = './data/rankingequipes.json';
+// let url = 'http://189.126.105.132:5000/rankingequipes';  // gunicorn
+let url = './data/rankingequipes.json';
 
 let apiData;
 
