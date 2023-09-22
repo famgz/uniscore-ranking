@@ -10,32 +10,26 @@
 </head>
 <body>
     <div id="content">
-        <h1 style="visibility: hidden;">Uniscore Ranking</h1>
-
         <input class="botao" type="button" onclick="carregarRanking()" value="Carregar Ranking">
         <input class="botao" type="button" onclick="limparRanking()" value="Limpar">
 
         <br>
-
-        
-            <table id="tabela-ranking" style="display: none;" border="1">
-                <thead>
-                    <tr>
-                        <!-- <th class="coluna-posicao">POSIÇÃO</th> -->
-                        <th colspan="2" class="equipes">Equipes</th>
-                        <th>P</th>
-                    </tr>
-                </thead>
-                <tbody id="tabela-corpo">
-                    <tr>
-                        <td class="posicao coluna-posicao">posicao</td>
-                        <td class="nome-equipe">nome-equipe</td>
-                        <td class="pontos">pontos</td>
-                    </tr>
-                </tbody>
-            </table>
-     
-        
+		<table id="tabela-ranking" style="display: none;" border="1">
+			<thead>
+				<tr>
+					<!-- <th class="coluna-posicao">POSIÇÃO</th> -->
+					<th colspan="2" class="equipes">Equipes</th>
+					<th>PTS</th>
+				</tr>
+			</thead>
+			<tbody id="tabela-corpo">
+				<tr>
+					<td class="posicao coluna-posicao">posicao</td>
+					<td class="nome-equipe">nome-equipe</td>
+					<td class="pontos">pontos</td>
+				</tr>
+			</tbody>
+		</table>     
     </div>
 </body>
 </html>
