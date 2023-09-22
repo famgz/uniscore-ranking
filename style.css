@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:wght@800&family=Work+Sans:ital,wght@0,800;0,900;1,800;1,900&display=swap');
+
+#content {
+    display: grid;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+body{
+    background-image: url(./images/tela_login.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    width: auto;
+    transition: width 0.5s ease;
+}
+
+
+
+#tabela-ranking {
+    display: block;
+    margin: auto;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+    border: none;
+    border: 1px solid transparent;
+    border-collapse: separate;
+    border-spacing: 0 2px; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+}
+
+.botao {
+    width: 150px;
+    margin: 5px auto;
+}
+
+
+
+td .nome-equipe {
+    text-align: left;
+}
+
+td.pontos {
+    text-align: center;
+}
+
+.verde {
+    background-color:#143d59 ;
+    color: #3cb371;
+}
+
+.branca {
+    background-color: #143d59;
+    color: #fff;
+}
+
+.vermelha {
+    background-color: #143d59; 
+    color: #DC746A;
+}
+
+
+.verde,
+.vermelha,
+.branca{
+    font-weight: 900;
+    /* border-radius: 4px 0 0 4px; */
+    border: none;
+    
+}
+
+td{
+    padding: 1px 29px;
+}
+
+
+thead {
+    background-color: #143d59;
+    color: #66d0d8;;
+    border-radius: 4px 4px 0 0 ;
+    
+}
+
+thead:nth-child(1){
+    font-style: italic;
+    font-weight: 200;
+}
+
+.equipes{
+    text-align: start;
+    padding: 0 14px ;
+    /* border-radius: 4px 0 0 4px; */
+}
+
+.pontos-azul-marinho {
+    background-color: #22E2E2; 
+    color: #143d59; 
+}
+
+.nome-equipe-branco {
+    background-color: #fff; 
+    color: #000; 
+}
+
+/* Aplicar padding menor às células da coluna "Posição" */
+td:nth-child(1) {
+    padding: 0 11px;
+}
+
+/* Aplicar padding menor às células da coluna "Pontos" */
+td:nth-child(3) {
+    padding: 0 11px;
+}
+
+td:nth-child(2){
+    text-align: start;
+    padding: 0 15px;
+    width: 250px;
+    color: #143d59
+}
+
+.botao{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: #143d59;
+    color: #22E2E2;
+    font-size: 14px;
+    width: 170px;
+    transition: all 0.1s;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+}
+
+.botao:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+h1{
+    margin-bottom: 100px
+}
+
+@media screen and (max-width: 768px) {
+    body {
+      background-image: url('./images/tela_login_projeto.png');
+    }
+  }

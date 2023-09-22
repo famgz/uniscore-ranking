@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniscore Ranking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <div id="content">
+        <h1 style="visibility: hidden;">Uniscore Ranking</h1>
+
+        <input class="botao" type="button" onclick="carregarRanking()" value="Carregar Ranking">
+        <input class="botao" type="button" onclick="limparRanking()" value="Limpar">
+
+        <br>
+
+        
+            <table id="tabela-ranking" style="display: none;" border="1">
+                <thead>
+                    <tr>
+                        <!-- <th class="coluna-posicao">POSIÇÃO</th> -->
+                        <th colspan="2" class="equipes">Equipes</th>
+                        <th>P</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-corpo">
+                    <tr>
+                        <td class="posicao coluna-posicao">posicao</td>
+                        <td class="nome-equipe">nome-equipe</td>
+                        <td class="pontos">pontos</td>
+                    </tr>
+                </tbody>
+            </table>
+     
+        
+    </div>
+</body>
+</html>
