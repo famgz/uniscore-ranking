@@ -9,12 +9,14 @@
     <script defer src="index.js"></script>
 </head>
 <body>
-    <div id="content">
-        <input class="botao" type="button" onclick="carregarRanking()" value="Carregar Ranking TEST">
-        <input class="botao" type="button" onclick="limparRanking()" value="Limpar">
-
-        <br>
-		<table id="tabela-ranking" style="display: none;" border="1">
+    <div id="topo">
+		<img id="logo-uniscore" src="images/logo-trans.png" alt="logomarca uniscore">
+	</div>
+	
+	<div id="conteudo">
+		<input class="botao" type="button" onclick="carregarRanking()" value="Carregar Ranking">
+		<!-- <input class="botao" type="button" onclick="limparRanking()" value="Limpar"> -->
+		<table id="tabela-ranking" style="visibility: hidden;" border="1">
 			<thead>
 				<tr>
 					<!-- <th class="coluna-posicao">POSIÇÃO</th> -->
@@ -29,7 +31,11 @@
 					<td class="pontos">pontos</td>
 				</tr>
 			</tbody>
-		</table>     
+		</table>
     </div>
+	
+	<div id="base">
+		<img id="logo-uninassau" src="images/uninassau.png" alt="logo uninassau">
+	</div>
 </body>
 </html>

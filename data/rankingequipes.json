@@ -48,5 +48,21 @@
         "nomeEquipe": "Colegio PEDRO II",
         "nomeTecnico": "Gabriel",
         "pontos": 5
+    }, {
+        "id": 11,
+        "nomeEquipe": "Colegio Elizeu",
+        "nomeTecnico": "Santana",
+        "pontos": 12
+    }, {
+        "id": 14,
+        "nomeEquipe": "UFPB",
+        "nomeTecnico": "Antonio",
+        "pontos": 5
+    }, {
+        "id": 15,
+        "nomeEquipe": "ISO",
+        "nomeTecnico": "Marcos",
+        "pontos": 9
     }
+	
 ]

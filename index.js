@@ -45,7 +45,7 @@ function intervaloMinimoAtingido() {
 
 function limparRanking() {
     tabelaCorpo.innerHTML = "";
-    tabela.style.display = "none";
+    tabela.style.visibility = "hidden";
 }
 
 function ordenarEquipesPorPontosDecrs() {
@@ -54,7 +54,7 @@ function ordenarEquipesPorPontosDecrs() {
 
 function popularTabela() {
       // mostrar tabela
-      tabela.style.display = "block";
+      tabela.style.visibility = "visible";
 
       // popular rows
       apiData.forEach(function (equipe, i) {
