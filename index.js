@@ -6,8 +6,13 @@ let apiData;
 let timestamp;
 const intervaloMinimoReq = 30 * 1000;  // milisegundos
 
+const body = document.body;
 const tabela = document.getElementById("tabela-ranking");
 const tabelaCorpo = document.getElementById("tabela-corpo");
+
+// regras de classificação (cores)
+const tier1 = 4;
+const tier2 = 10;
 
 const headers = new Headers({
     'Accept': 'application/json',
@@ -64,24 +69,25 @@ function popularTabela() {
           let pontos = row.insertCell(2);
   
           // Adicionar classe à célula da coluna "Posição" com base nas posições
-          if (i < 3) {
-              pos.className = "verde";
-          } else if (i < 7) {
-              pos.className = "branca";
-          } else if (i < 10) {
-              pos.className = "vermelha";
+          if (i < tier1) {
+              pos.classList.add("verde");
+          } else if (i < tier2) {
+              pos.classList.add("branca");
+          } else if (i >= tier2) {
+              pos.classList.add("vermelha");
           }
   
           // Adicionar classe à célula da coluna "Nome da Equipe"
-          nome.className = "nome-equipe-branco";
+          nome.classList.add("nome-equipe-branco");
   
           // Adicionar classe à célula da coluna "Pontos"
-          pontos.className = "pontos-azul-marinho";
+          pontos.classList.add("pontos-azul-marinho");
   
           pos.innerHTML = i + 1;
           nome.innerHTML = equipe.nomeEquipe;
           pontos.innerHTML = equipe.pontos;
       });
+
 }
 
 function aplicarCores() {
@@ -151,6 +157,4 @@ async function carregarRanking() {
     ordenarEquipesPorPontosDecrs();
 
     popularTabela();
-
-    aplicarCores(); 
 }

@@ -1,53 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:wght@800&family=Work+Sans:ital,wght@0,800;0,900;1,800;1,900&display=swap');
 
+:root {
+    /* cores botoes */
+    --azul-escuro: #143d59;
+    --ciano: #22e2e2;
+    --ciano2: #66d0d8;
+    /* cores classificacao */
+    --verde: #3cb371;
+    --branco: #fff;
+    --vermelho: #dc746a;
+}
+
 html {
-    height: 100%;
-    background-image: radial-gradient(#bbb, #fff);
+    background-image: radial-gradient(#ccc, #fff);
     background-repeat: no-repeat;
 }
 
 body {
-    height: 100%;
+    min-height: 100vh;
     margin: 0;
-    width: auto;
-    /* transition: width 0.5s ease; */
+    position: relative;
+    display: block;
     font-family: Poppins, sans-serif;
-    
-    background-image: url("./images/image-trans.png");
+    background-image: url('images/bg-trans.png');
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: left bottom;
-}
-
-body::before {
-    /* background-size: cover;
-    background-attachment: fixed; */
-
+    background-position: bottom;
 }
 
 #topo {
     display: grid;
     width: 100%;
-    height: 15%;
+    height: 12vh;
     margin: auto;
     text-align: center;
+    padding-top: 10px;
+}
+
+#logo-uniscore {
+    height: 60%;
+    margin: auto;
 }
 
 #conteudo {
-    display: grid;
-    width: 50%;
-    /* height: 60%; */
-    margin: auto;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    flex-grow: 1;
 }
 
-#base {
-    position: fixed;
-    left: 0;
+footer {
+    position: absolute;
     bottom: 0;
+    margin-bottom: 0;
     width: 100%;
-    height: 10%;
-    display: grid;
-    align-items: top;
+    height: 10vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
 }
 
 #tabela-ranking {
@@ -65,25 +79,20 @@ body::before {
 }
 
 
-#logo-uniscore {
-    height: 40%;
-    margin: auto;
-}
-
 #logo-uninassau {
-    height: 20%;
-    margin: 50px auto 30px auto;
+    height: 25%;
+    margin-bottom: 10px;
 }
 
 .botao {
-    width: 150px;
-    height: 50px;
-    margin: 10px auto 30px auto;
+    width: 100px;
+    height: 35px;
+    margin: 10px auto 20px auto;
     border: none;
     padding: 5px 10px;
-    border-radius: 5px;
-    background-color: #143d59;
-    color: #22E2E2;
+    border-radius: 2px;
+    background-color: var(--azul-escuro);
+    color: var(--ciano);
     font-size: 14px;
     width: 170px;
     transition: all 0.1s;
@@ -94,7 +103,7 @@ body::before {
 }
 
 .botao:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
     cursor: pointer;
 }
 
@@ -110,23 +119,22 @@ td.pontos {
 .vermelha,
 .branca {
     font-weight: 900;
-    /* border-radius: 4px 0 0 4px; */
     border: none;
 }
 
 .verde {
-    background-color: #143d59;
-    color: #3cb371;
+    background-color: var(--azul-escuro);
+    color: var(--verde);
 }
 
 .branca {
-    background-color: #143d59;
-    color: #fff;
+    background-color: var(--azul-escuro);
+    color: var(--branco);
 }
 
 .vermelha {
-    background-color: #143d59;
-    color: #DC746A;
+    background-color: var(--azul-escuro);
+    color: var(--vermelho);
 }
 
 td {
@@ -134,8 +142,8 @@ td {
 }
 
 thead {
-    background-color: #143d59;
-    color: #66d0d8;
+    background-color: var(--azul-escuro);
+    color: var(--ciano2);
     ;
     border-radius: 4px 4px 0 0;
 }
@@ -152,12 +160,12 @@ thead:nth-child(1) {
 }
 
 .pontos-azul-marinho {
-    background-color: #22E2E2;
-    color: #143d59;
+    background-color: var(--ciano);
+    color: var(--azul-escuro);
 }
 
 .nome-equipe-branco {
-    background-color: #fff;
+    background-color: var(--branco);
     color: #000;
 }
 
@@ -175,7 +183,7 @@ td:nth-child(2) {
     text-align: start;
     padding: 0 15px;
     width: 250px;
-    color: #143d59
+    color: var(--azul-escuro);
 }
 
 /* @media screen and (max-width: 768px) {

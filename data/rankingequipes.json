@@ -1,68 +1,87 @@
 [{
-        "id": 2,
-        "nomeEquipe": "Colegio Vida",
-        "nomeTecnico": "Teteu",
-        "pontos": 18
-    }, {
-        "id": 3,
-        "nomeEquipe": "CNEC",
-        "nomeTecnico": "Lilo",
-        "pontos": 16
-    }, {
         "id": 5,
         "nomeEquipe": "Corujinha",
         "nomeTecnico": "Getulio",
-        "pontos": 16
+        "pontos": 26
     }, {
-        "id": 8,
-        "nomeEquipe": "IFPB",
-        "nomeTecnico": "Leticia",
-        "pontos": 14
-    }, {
-        "id": 13,
-        "nomeEquipe": "saber",
-        "nomeTecnico": "Geraldo ",
-        "pontos": 9
-    }, {
-        "id": 7,
-        "nomeEquipe": "Col\u00e9gio Programus",
-        "nomeTecnico": "Cipriano",
-        "pontos": 8
-    }, {
-        "id": 12,
-        "nomeEquipe": "lourdinas ",
-        "nomeTecnico": "paulo",
-        "pontos": 8
-    }, {
-        "id": 9,
-        "nomeEquipe": "Col\u00e9gio Encontro ",
-        "nomeTecnico": "Vanessa",
-        "pontos": 7
-    }, {
-        "id": 4,
-        "nomeEquipe": "Geo",
-        "nomeTecnico": "Arnaldo",
-        "pontos": 6
+        "id": 2,
+        "nomeEquipe": "Colegio Vida",
+        "nomeTecnico": "Teteu",
+        "pontos": 23
     }, {
         "id": 10,
         "nomeEquipe": "Colegio PEDRO II",
         "nomeTecnico": "Gabriel",
-        "pontos": 5
+        "pontos": 20
     }, {
-        "id": 11,
-        "nomeEquipe": "Colegio Elizeu",
-        "nomeTecnico": "Santana",
+        "id": 8,
+        "nomeEquipe": "IFPB",
+        "nomeTecnico": "Leticia",
+        "pontos": 20
+    }, {
+        "id": 4,
+        "nomeEquipe": "Geo",
+        "nomeTecnico": "Arnaldo",
+        "pontos": 20
+    }, {
+        "id": 3,
+        "nomeEquipe": "CNEC",
+        "nomeTecnico": "Lilo",
+        "pontos": 17
+    }, {
+        "id": 7,
+        "nomeEquipe": "Col\u00e9gio Programus",
+        "nomeTecnico": "Cipriano",
+        "pontos": 15
+    }, {
+        "id": 9,
+        "nomeEquipe": "Col\u00e9gio Encontro ",
+        "nomeTecnico": "Vanessa",
+        "pontos": 13
+    }, {
+        "id": 13,
+        "nomeEquipe": "saber",
+        "nomeTecnico": "Geraldo ",
+        "pontos": 13
+    }, {
+        "id": 12,
+        "nomeEquipe": "lourdinas ",
+        "nomeTecnico": "paulo",
         "pontos": 12
     }, {
         "id": 14,
-        "nomeEquipe": "UFPB",
-        "nomeTecnico": "Antonio",
-        "pontos": 5
+        "nomeEquipe": "QI ",
+        "nomeTecnico": "Bol\u00e3o",
+        "pontos": 1
     }, {
-        "id": 15,
-        "nomeEquipe": "ISO",
-        "nomeTecnico": "Marcos",
-        "pontos": 9
+        "id": 7,
+        "nomeEquipe": "Col\u00e9gio Exato",
+        "nomeTecnico": "Zeca",
+        "pontos": 11
+    }, {
+        "id": 9,
+        "nomeEquipe": "Col\u00e9gio Evolucao ",
+        "nomeTecnico": "Pedrinho",
+        "pontos": 3
+    }, {
+        "id": 13,
+        "nomeEquipe": "Colegio ISO",
+        "nomeTecnico": "Everaldo",
+        "pontos": 17
+    }, {
+        "id": 12,
+        "nomeEquipe": "IESP",
+        "nomeTecnico": "Carlosd",
+        "pontos": 18
+    }, {
+        "id": 14,
+        "nomeEquipe": "Colegio Aprender",
+        "nomeTecnico": "Ronaldo",
+        "pontos": 2
+    }, {
+        "id": 14,
+        "nomeEquipe": "UFPB",
+        "nomeTecnico": "Silmara",
+        "pontos": 19
     }
-	
 ]
