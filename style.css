@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:wght@800&family=Work+Sans:ital,wght@0,800;0,900;1,800;1,900&display=swap');
 
 :root {
+    color-scheme: light only;
     /* cores botoes */
     --azul-escuro: #143d59;
     --ciano: #22e2e2;
