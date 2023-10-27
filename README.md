@@ -8,4 +8,5 @@ Projeto educacional de extensão em parceria com @mateusmaiia desenvolvido sob m
 
 Link da página: [famgz.github.io/uniscore-ranking](famgz.github.io/uniscore-ranking)
 
+---
 ![screenshots](https://raw.githubusercontent.com/famgz/uniscore-ranking/main/screenshots/v2.jpg)
