@@ -158,3 +158,5 @@ async function carregarRanking() {
 
     popularTabela();
 }
+
+carregarRanking()
