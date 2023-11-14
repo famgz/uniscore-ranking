@@ -6,14 +6,15 @@
     --azul-escuro: #143d59;
     --ciano: #22e2e2;
     --ciano2: #66d0d8;
+    --bg-table: #fff;
     /* cores classificacao */
-    --verde: #3cb371;
-    --branco: #fff;
-    --vermelho: #dc746a;
+    --ouro: #ffd700;
+    --prata: #cfcfcf;
+    --bronze: #cd7f32;
 }
 
 html {
-    background-image: radial-gradient(#ccc, #fff);
+    background-image: radial-gradient(#8a8a8a, #f5f5f5);
     background-repeat: no-repeat;
 }
 
@@ -29,21 +30,22 @@ body {
     background-position: bottom;
 }
 
-#topo {
+header {
     display: grid;
     width: 100%;
     height: 12vh;
     margin: auto;
+    margin-bottom: 20px;
     text-align: center;
     padding-top: 10px;
+
+    & #logo-uniscore {
+        height: 60%;
+        margin: auto;
+    }
 }
 
-#logo-uniscore {
-    height: 60%;
-    margin: auto;
-}
-
-#conteudo {
+div#conteudo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,38 +56,8 @@ body {
     flex-grow: 1;
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 0;
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    align-items: end;
-    justify-content: center;
-}
-
-#tabela-ranking {
-    display: block;
-    margin: auto;
-    border: 1px solid rgb(206, 206, 206);
-    border-radius: 5px;
-    border: none;
-    border: 1px solid transparent;
-    border-collapse: separate;
-    border-spacing: 0 2px;
-    font-style: normal;
-    font-weight: 800;
-    font-display: swap;
-}
-
-
-#logo-uninassau {
-    height: 25%;
-    margin-bottom: 10px;
-}
-
-.botao {
+input.botao {
+    display: none;
     width: 100px;
     height: 35px;
     margin: 10px auto 20px auto;
@@ -101,90 +73,75 @@ footer {
     font-style: normal;
     font-weight: 800;
     font-display: swap;
+
+    &:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
 }
 
-.botao:hover {
-    transform: scale(1.02);
-    cursor: pointer;
-}
-
-td .nome-equipe {
-    text-align: left;
-}
-
-td.pontos {
-    text-align: center;
-}
-
-.verde,
-.vermelha,
-.branca {
-    font-weight: 900;
+#tabela-ranking {
+    display: block;
+    margin: auto;
     border: none;
+    border: 1px solid transparent;
+    border-collapse: separate;
+    border-spacing: 0 2px;
+    font-weight: 800;
+    font-display: swap;
+
+    & thead {
+        background-color: var(--azul-escuro);
+        color: var(--ciano2);
+        border-radius: 4px 4px 0 0;
+        font-style: italic;
+        font-weight: 200;
+    }
+
+    /* Titulo `Equipes` */
+    & th:nth-child(1) {
+        text-align: start;
+        padding: 0 14px;
+        /* border-radius: 4px 0 0 4px; */
+    }
+
+    /* Posição */
+    & td:nth-child(1) {
+        padding: 0 11px;
+        background-color: var(--azul-escuro)
+    }
+
+    /* Equipes */
+    & td:nth-child(2) {
+        text-align: start;
+        padding: 0 15px;
+        width: 250px;
+        color: var(--azul-escuro);
+        background-color: var(--bg-table);
+    }
+
+    /* Aplicar padding menor às células da coluna "Pontos" */
+    & td:nth-child(3) {
+        padding: 0 11px;
+        background-color: var(--ciano);
+        color: var(--azul-escuro);
+    }
 }
 
-.verde {
-    background-color: var(--azul-escuro);
-    color: var(--verde);
-}
+footer {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
 
-.branca {
-    background-color: var(--azul-escuro);
-    color: var(--branco);
-}
-
-.vermelha {
-    background-color: var(--azul-escuro);
-    color: var(--vermelho);
-}
-
-td {
-    padding: 1px 29px;
-}
-
-thead {
-    background-color: var(--azul-escuro);
-    color: var(--ciano2);
-    ;
-    border-radius: 4px 4px 0 0;
-}
-
-thead:nth-child(1) {
-    font-style: italic;
-    font-weight: 200;
-}
-
-.equipes {
-    text-align: start;
-    padding: 0 14px;
-    /* border-radius: 4px 0 0 4px; */
-}
-
-.pontos-azul-marinho {
-    background-color: var(--ciano);
-    color: var(--azul-escuro);
-}
-
-.nome-equipe-branco {
-    background-color: var(--branco);
-    color: #000;
-}
-
-/* Aplicar padding menor às células da coluna "Posição" */
-td:nth-child(1) {
-    padding: 0 11px;
-}
-
-/* Aplicar padding menor às células da coluna "Pontos" */
-td:nth-child(3) {
-    padding: 0 11px;
-}
-
-td:nth-child(2) {
-    text-align: start;
-    padding: 0 15px;
-    width: 250px;
-    color: var(--azul-escuro);
+    & img {
+        height: 25px;
+        margin-bottom: 10px;
+    }
 }
 
 /* @media screen and (max-width: 768px) {
