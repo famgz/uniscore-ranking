@@ -1,10 +1,10 @@
-// let url = 'http://189.126.105.132:5000/rankingequipes';  // gunicorn
-let url = './data/rankingequipes.json';
+let url = 'http://189.126.105.132:5000/rankingequipes';  // gunicorn
+// let url = './data/rankingequipes.json';
 
 let apiData;
 
 let timestamp;
-const intervaloMinimoReq = 30 * 1000;  // milisegundos
+const intervaloMinimoReq = 1000 * 30;  // segundos
 
 const body = document.body;
 const tabela = document.getElementById("tabela-ranking");

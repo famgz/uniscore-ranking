@@ -35,7 +35,7 @@ header {
     width: 100%;
     height: 12vh;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     text-align: center;
     padding-top: 10px;
 
@@ -57,7 +57,6 @@ div#conteudo {
 }
 
 input.botao {
-    display: none;
     width: 100px;
     height: 35px;
     margin: 10px auto 20px auto;
@@ -77,6 +76,8 @@ input.botao {
     &:hover {
         transform: scale(1.02);
         cursor: pointer;
+        color: #ebebeb;
+        transition-duration: 0.2s ease;
     }
 }
 
@@ -86,14 +87,13 @@ input.botao {
     border: none;
     border: 1px solid transparent;
     border-collapse: separate;
-    border-spacing: 0 2px;
+    border-spacing: 2px 2px;
     font-weight: 800;
     font-display: swap;
 
     & thead {
         background-color: var(--azul-escuro);
         color: var(--ciano2);
-        border-radius: 4px 4px 0 0;
         font-style: italic;
         font-weight: 200;
     }
@@ -102,7 +102,6 @@ input.botao {
     & th:nth-child(1) {
         text-align: start;
         padding: 0 14px;
-        /* border-radius: 4px 0 0 4px; */
     }
 
     /* Posição */
@@ -123,7 +122,7 @@ input.botao {
     /* Aplicar padding menor às células da coluna "Pontos" */
     & td:nth-child(3) {
         padding: 0 11px;
-        background-color: var(--ciano);
+        background-color: var(--bg-table);
         color: var(--azul-escuro);
     }
 }

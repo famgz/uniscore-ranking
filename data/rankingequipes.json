@@ -83,5 +83,20 @@
         "nomeEquipe": "UFPB",
         "nomeTecnico": "Silmara",
         "pontos": 19
+    }, {
+        "id": 12,
+        "nomeEquipe": "IESP",
+        "nomeTecnico": "Carlosd",
+        "pontos": 18
+    }, {
+        "id": 14,
+        "nomeEquipe": "Colegio Aprender",
+        "nomeTecnico": "Ronaldo",
+        "pontos": 2
+    }, {
+        "id": 14,
+        "nomeEquipe": "UFPB",
+        "nomeTecnico": "Silmara",
+        "pontos": 19
     }
 ]
