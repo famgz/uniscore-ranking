@@ -1,146 +1,146 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:wght@800&family=Work+Sans:ital,wght@0,800;0,900;1,800;1,900&display=swap');
 
 :root {
-    color-scheme: light only;
-    /* cores botoes */
-    --azul-escuro: #143d59;
-    --ciano: #22e2e2;
-    --ciano2: #66d0d8;
-    --bg-table: #fff;
-    /* cores classificacao */
-    --ouro: #ffd700;
-    --prata: #cfcfcf;
-    --bronze: #cd7f32;
+  color-scheme: light only;
+  /* cores botoes */
+  --azul-escuro: #143d59;
+  --ciano: #22e2e2;
+  --ciano2: #66d0d8;
+  --bg-table: #fff;
+  /* cores classificacao */
+  --ouro: #ffd700;
+  --prata: #cfcfcf;
+  --bronze: #cd7f32;
 }
 
 html {
-    background-image: radial-gradient(#8a8a8a, #f5f5f5);
-    background-repeat: no-repeat;
+  background-image: radial-gradient(#8a8a8a, #f5f5f5);
+  background-repeat: no-repeat;
 }
 
 body {
-    min-height: 100vh;
-    margin: 0;
-    position: relative;
-    display: block;
-    font-family: Poppins, sans-serif;
-    background-image: url('images/bg-trans.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+  display: block;
+  font-family: Poppins, sans-serif;
+  background-image: url('images/bg-trans.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 header {
-    display: grid;
-    width: 100%;
-    height: 12vh;
-    margin: auto;
-    margin-bottom: 0;
-    text-align: center;
-    padding-top: 10px;
+  display: grid;
+  width: 100%;
+  height: 12vh;
+  margin: auto;
+  margin-bottom: 0;
+  text-align: center;
+  padding-top: 10px;
 
-    & #logo-uniscore {
-        height: 60%;
-        margin: auto;
-    }
+  & #logo-uniscore {
+    height: 60%;
+    margin: auto;
+  }
 }
 
 div#conteudo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 50px;
-    padding-left: 25px;
-    padding-right: 25px;
-    flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  flex-grow: 1;
 }
 
 input.botao {
-    width: 100px;
-    height: 35px;
-    margin: 10px auto 20px auto;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 2px;
-    background-color: var(--azul-escuro);
-    color: var(--ciano);
-    font-size: 14px;
-    width: 170px;
-    transition: all 0.1s;
-    font-family: Poppins, sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-display: swap;
+  width: 100px;
+  height: 35px;
+  margin: 10px auto 20px auto;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 2px;
+  background-color: var(--azul-escuro);
+  color: var(--ciano);
+  font-size: 14px;
+  width: 170px;
+  transition: all 0.1s;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
 
-    &:hover {
-        transform: scale(1.02);
-        cursor: pointer;
-        color: #ebebeb;
-        transition-duration: 0.2s ease;
-    }
+  &:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    color: #ebebeb;
+    transition-duration: 0.2s ease;
+  }
 }
 
 #tabela-ranking {
-    display: block;
-    margin: auto;
-    border: none;
-    border: 1px solid transparent;
-    border-collapse: separate;
-    border-spacing: 2px 2px;
-    font-weight: 800;
-    font-display: swap;
+  display: block;
+  margin: auto;
+  border: none;
+  border: 1px solid transparent;
+  border-collapse: separate;
+  border-spacing: 2px 2px;
+  font-weight: 800;
+  font-display: swap;
 
-    & thead {
-        background-color: var(--azul-escuro);
-        color: var(--ciano2);
-        font-style: italic;
-        font-weight: 200;
-    }
+  & thead {
+    background-color: var(--azul-escuro);
+    color: var(--ciano2);
+    font-style: italic;
+    font-weight: 200;
+  }
 
-    /* Titulo `Equipes` */
-    & th:nth-child(1) {
-        text-align: start;
-        padding: 0 14px;
-    }
+  /* Titulo `Equipes` */
+  & th:nth-child(1) {
+    text-align: start;
+    padding: 0 14px;
+  }
 
-    /* Posição */
-    & td:nth-child(1) {
-        padding: 0 11px;
-        background-color: var(--azul-escuro)
-    }
+  /* Posição */
+  & td:nth-child(1) {
+    padding: 0 11px;
+    background-color: var(--azul-escuro);
+  }
 
-    /* Equipes */
-    & td:nth-child(2) {
-        text-align: start;
-        padding: 0 15px;
-        width: 250px;
-        color: var(--azul-escuro);
-        background-color: var(--bg-table);
-    }
+  /* Equipes */
+  & td:nth-child(2) {
+    text-align: start;
+    padding: 0 15px;
+    width: 250px;
+    color: var(--azul-escuro);
+    background-color: var(--bg-table);
+  }
 
-    /* Aplicar padding menor às células da coluna "Pontos" */
-    & td:nth-child(3) {
-        padding: 0 11px;
-        background-color: var(--bg-table);
-        color: var(--azul-escuro);
-    }
+  /* Aplicar padding menor às células da coluna "Pontos" */
+  & td:nth-child(3) {
+    padding: 0 11px;
+    background-color: var(--bg-table);
+    color: var(--azul-escuro);
+  }
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 0;
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    align-items: end;
-    justify-content: center;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: end;
+  justify-content: center;
 
-    & img {
-        height: 25px;
-        margin-bottom: 10px;
-    }
+  & img {
+    height: 25px;
+    margin-bottom: 10px;
+  }
 }
 
 /* @media screen and (max-width: 768px) {

@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="color-scheme" content="light only">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light only" />
     <title>Uniscore Ranking</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <script defer src="index.js"></script>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <img
+        id="logo-uniscore"
+        src="images/logo-trans.png"
+        alt="logomarca uniscore"
+      />
+    </header>
 
-	<header>
-		<img id="logo-uniscore" src="images/logo-trans.png" alt="logomarca uniscore">
-	</header>
-
-	<div id="conteudo">
-		<input class="botao" type="button" onclick="carregarRanking()" value="Atualizar Ranking">
-		<!-- <input class="botao" type="button" onclick="limparRanking()" value="Limpar"> -->
-		<table id="tabela-ranking" style="visibility: hidden;" border="1">
-			<thead>
-				<tr>
-					<!-- <th class="coluna-posicao">POSIÇÃO</th> -->
-					<th colspan="2" class="equipes">Equipes</th>
-					<th>P</th>
-				</tr>
-			</thead>
-			<tbody id="tabela-corpo">
-				<tr>
-					<td class="posicao coluna-posicao">posicao</td>
-					<td class="nome-equipe">nome-equipe</td>
-					<td class="pontos">pontos</td>
-				</tr>
-			</tbody>
-		</table>
+    <div id="conteudo">
+      <input
+        class="botao"
+        type="button"
+        onclick="carregarRanking()"
+        value="Atualizar Ranking"
+      />
+      <!-- <input class="botao" type="button" onclick="limparRanking()" value="Limpar"> -->
+      <table id="tabela-ranking" style="visibility: hidden" border="1">
+        <thead>
+          <tr>
+            <!-- <th class="coluna-posicao">POSIÇÃO</th> -->
+            <th colspan="2" class="equipes">Equipes</th>
+            <th>P</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-corpo">
+          <tr>
+            <td class="posicao coluna-posicao">posicao</td>
+            <td class="nome-equipe">nome-equipe</td>
+            <td class="pontos">pontos</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
-	<footer>
-		<img src="images/uninassau.png" alt="logo uninassau">
-	</footer>
-</body>
+    <footer>
+      <img src="images/uninassau.png" alt="logo uninassau" />
+    </footer>
+  </body>
 </html>
